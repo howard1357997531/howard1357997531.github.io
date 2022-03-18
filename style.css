@@ -52,7 +52,7 @@ p {
     font-size: 20px;
 }
 
-.container > div:nth-of-type(1){
+.container > div:nth-of-type(1){         /* div:nth-of-type 型態*/
     grid-column: 1 / 3 ;
 }
 
