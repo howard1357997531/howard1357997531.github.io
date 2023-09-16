@@ -238,8 +238,7 @@ a {
     }
 
     .box4 .title{
-        position: absolute;
-        top: 1%;
+        position: relative;
         font-size: 36px;
     }
 
