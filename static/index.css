@@ -256,6 +256,12 @@ a {
     color: #a1887f;
 }
 
+@media screen and (max-width: 600px) {
+    .box {
+        height: 200vh !important;
+    }
+  }
+
 
 
 
