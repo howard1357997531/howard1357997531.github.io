@@ -1,0 +1,262 @@
+html {
+    background-color: beige;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    background-color: #4f4f4f;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 99;
+}
+
+.nav.op-80 {
+    opacity: 90%;
+}
+
+.nav .nav-sidebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    width: 25%;
+}
+
+.nav .nav-centerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .nav .nav-centerbox{
+        justify-content: space-evenly;
+    }
+  }
+
+.nav .nav-centerbox .nav-centerbox-small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+}
+
+.nav .nav-centerbox .nav-centerbox-small a{
+    color: #fff;
+}
+
+.nav .nav-centerbox .nav-centerbox-small a:hover{
+    transform: scale(1.1);
+}
+
+.nav .nav-centerbox .nav-centerbox-small a:active{
+    transform: scale(0.9);
+}
+
+.nav .nav-sidebox .aLink{
+    padding: 4px 6px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.nav .nav-sidebox .aLink:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+    border: 2px solid aqua;
+}
+
+.nav .nav-sidebox .aLink:active{
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px) {
+    .nav a {
+        font-size: 12px !important;
+    }
+
+    .nav .nav-centerbox .nav-centerbox-small{
+        width:33%;
+    }
+  }
+
+.box {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box1 .img1 {
+    background-image: url(./hair_salon2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box1 .text1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    color: #fff;
+}
+
+.box1 .text2 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .box1 .text1 {
+        top: 48%;
+        font-size: 26px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .box1 .text2 {
+        top: 54%;
+        font-size: 16px;
+        color: #fff;
+        width: 350px;
+        text-align: center;
+    }
+  }
+
+.box2 .text1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 46px;
+    color: #000;
+}
+
+@media screen and (max-width: 800px) {
+    .box2 .text1 {
+        font-size: 26px;
+    }
+  }
+
+@media screen and (max-width: 650px) {
+    .box2 .text1 {
+        top: 30%;
+        font-size: 26px;
+    }
+}
+
+.box2 .text2 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #a1887f;
+}
+
+.box3 {
+    background-color: #d7ccc8;
+}
+
+.box3-innerbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.box3 img {
+    width: 40%;
+    height: 80%;
+}
+
+.box3 .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 80%;
+}
+
+.box3 .text-box p{
+    font-size: 26px;
+}
+
+@media screen and (max-width: 650px) {
+    .box3-innerbox {
+        flex-direction: column  ;
+    }
+
+    .box3 img {
+        margin: 50px 0px;
+        width: 60%;
+        height: 80%;
+    }
+
+    .box3 .text-box p{
+        font-size: 16px;
+    }
+}
+
+.box4 {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box4 .title{
+    position: absolute;
+    top: 10%;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 650px) {
+    .box4 {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box4 .title{
+        position: absolute;
+        top: 1%;
+        font-size: 36px;
+    }
+
+    .box4 .first{
+        margin-top: 100px !important;
+    }
+}
+
+.box4 p{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 26px;
+    margin-top: 15px;
+    color: #a1887f;
+}
+
+
+
+
+
+
